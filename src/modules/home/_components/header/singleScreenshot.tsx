@@ -14,7 +14,7 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
       const i = totalCount - index;
       const transformer = transform(
         [(i - 1) / totalCount, i / totalCount],
-        [0, 1]
+        [0, 1],
       );
       return -transformer(y) * 100 + "%";
     }
@@ -25,7 +25,7 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
       const i = totalCount - index;
       const transformer = transform(
         [(i - 1) / totalCount, i / totalCount],
-        [0, 1]
+        [0, 1],
       );
       return -transformer(y) * 100 + "%";
     }
@@ -35,7 +35,12 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
     <motion.img
       src={src}
       alt={`screenshot ${index}`}
-      style={{ translateX: x, translateY: y, scale: 1 }}
+      style={{
+        translateX: x,
+        translateY: y,
+        scale: 1,
+        objectFit: "contain",
+      }}
       className="absolute overflow-hidden w-full h-full"
     />
   );

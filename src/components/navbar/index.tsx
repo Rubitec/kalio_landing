@@ -4,13 +4,13 @@ import clsx from "clsx";
 import { easeIn, motion, useScroll, useTransform } from "framer-motion";
 import { useContext, useState } from "react";
 import { ConfigContext } from "../../utils/configContext";
-import ThemeSwitcher from "./themeSwitcher";
+// import ThemeSwitcher from "./themeSwitcher";
 
 function Navbar() {
   const {
     name,
     logo,
-    showThemeSwitch,
+    // showThemeSwitch,
     topNavbar,
     googlePlayLink,
     appStoreLink,
@@ -44,12 +44,15 @@ function Navbar() {
         className="will-change-[width,transform] transition-all mx-auto navbar relative px-4 max-md:!w-full"
       >
         <motion.div
-          style={{ opacity: isMobileNavVisible ? 1 : opacity }}
+          style={{
+            opacity: isMobileNavVisible ? 1 : opacity,
+            backgroundColor: "#2ECC71",
+          }}
           className={clsx(
             "will-change-[border-radius,opacity] transition-all z-[-1] rounded-full absolute left-0 right-0 top-0 bottom-0 bg-base-100 shadow-xl",
             {
               "rounded-none": isMobileNavVisible,
-            }
+            },
           )}
         />
         <div className="navbar-start">
@@ -59,7 +62,7 @@ function Navbar() {
           </a>
         </div>
         <div className="navbar-end md:hidden">
-          {showThemeSwitch && <ThemeSwitcher />}
+          {/* {showThemeSwitch && <ThemeSwitcher />} */}
           <MenuToggle
             toggle={() => setIsMobileNavVisible((current) => !current)}
             isOpen={isMobileNavVisible}
@@ -67,7 +70,7 @@ function Navbar() {
         </div>
         <div className="navbar-end hidden font-semibold md:flex">
           <ul className="flex gap-4 px-1 items-center">
-            {showThemeSwitch && <ThemeSwitcher />}
+            {/* {showThemeSwitch && <ThemeSwitcher />} */}
             {topNavbar.links.map(({ title, href }, index) => (
               <li key={index}>
                 <a
@@ -80,7 +83,11 @@ function Navbar() {
             ))}
           </ul>
           {topNavbar.cta && (
-            <a href="/app" className="ml-3 btn btn-primary btn-outline py-4">
+            <a
+              href="/app"
+              className="ml-3 btn"
+              style={{ backgroundColor: "#2ECC71", color: "#FFFFFF" }}
+            >
               {topNavbar.cta}
             </a>
           )}

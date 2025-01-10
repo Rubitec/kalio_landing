@@ -45,7 +45,9 @@ function Testimonials() {
         >
           {testimonials.cards.map(({ name, comment }, index) => (
             <SwiperSlide className="!h-[22rem] my-2" key={index}>
-              <div className="h-full card shadow bg-primary">
+              <div className="h-full card shadow bg-[#2ECC71]">
+                {" "}
+                {/* Updated to brand color */}
                 <div className="p-6 card-body">
                   <div className="flex mb-4">
                     {Array(5)
@@ -53,12 +55,14 @@ function Testimonials() {
                       .map((_, index) => (
                         <div
                           key={index}
-                          className="h-6 w-6 mask mask-star-2 bg-primary-content"
+                          className="h-6 w-6 mask mask-star-2 bg-[#FFFFFF]" // Updated to match brand color
                         />
                       ))}
                   </div>
-                  <p className="text-primary-content/90">{comment}</p>
-                  <h2 className="card-title text-primary-content">{name}</h2>
+                  <p className="text-[#FFFFFF]/90">{comment}</p>{" "}
+                  {/* Updated to match brand color */}
+                  <h2 className="card-title text-[#FFFFFF]">{name}</h2>{" "}
+                  {/* Updated to match brand color */}
                 </div>
               </div>
             </SwiperSlide>

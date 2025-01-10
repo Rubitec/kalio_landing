@@ -28,7 +28,7 @@ function Footer() {
                 visible: { opacity: 1, x: 0 },
               }}
               transition={{ delay: index * 0.25 }}
-              className="text-xl font-bold block uppercase whitespace-nowrap link no-underline text-primary hover:text-primary/50 md:text-4xl"
+              className="text-xl font-bold block uppercase whitespace-nowrap link no-underline text-[#2ECC71] hover:text-[#27AE60] md:text-4xl" // Updated to match brand color
               href={href}
             >
               {title}
@@ -88,7 +88,7 @@ function Footer() {
                   visible: { opacity: 1, scale: 1 },
                 }}
                 transition={{ delay: 0.25 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+                className="font-bold text-[#2ECC71] hover:text-[#27AE60] lg:whitespace-nowrap"
                 href="/terms-and-conditions"
               >
                 Terms & conditions
@@ -101,36 +101,36 @@ function Footer() {
                   visible: { opacity: 1, scale: 1 },
                 }}
                 transition={{ delay: 0.5 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+                className="font-bold text-[#2ECC71] hover:text-[#27AE60] lg:whitespace-nowrap"
                 href="/privacy-policy"
               >
                 Privacy policy
               </motion.a>
             )}
-            {legalLinks.cookiesPolicy && (
+            {/* {legalLinks.cookiesPolicy && (
               <motion.a
                 variants={{
                   hidden: { opacity: 0, scale: 0.4 },
                   visible: { opacity: 1, scale: 1 },
                 }}
                 transition={{ delay: 0.75 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+                className="font-bold text-[#2ECC71] hover:text-[#27AE60] lg:whitespace-nowrap"
                 href="/cookies-policy"
               >
                 Cookies policy
               </motion.a>
-            )}
+            )} */}
+            <motion.p
+              variants={{
+                hidden: { opacity: 0, scale: 0.4 },
+                visible: { opacity: 1, scale: 1 },
+              }}
+              transition={{ delay: 1 }}
+              className="mt-0.5 md:ml-4 md:whitespace-nowrap"
+            >
+              All rights reserved © {new Date().getFullYear()}
+            </motion.p>
           </div>
-          <motion.p
-            variants={{
-              hidden: { opacity: 0, scale: 0.4 },
-              visible: { opacity: 1, scale: 1 },
-            }}
-            transition={{ delay: 1 }}
-            className="mt-0.5 md:ml-4 md:whitespace-nowrap"
-          >
-            All rights reserved © {new Date().getFullYear()}
-          </motion.p>
         </aside>
       </motion.div>
     </footer>

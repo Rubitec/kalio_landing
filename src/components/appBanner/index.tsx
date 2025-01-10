@@ -35,7 +35,9 @@ function AppBanner() {
           duration: 0.2,
         }}
       >
-        <div className="p-4 bg-primary text-primary-content rounded-t-[var(--rounded-box)] flex flex-col items-center md:flex-row">
+        <div className="p-4 bg-[#2ECC71] text-primary-content rounded-t-[var(--rounded-box)] flex flex-col items-center md:flex-row">
+          {" "}
+          {/* Updated to brand background color */}
           <div className="flex-1 flex flex-col items-center justify-center min-h-full">
             <motion.h2
               initial={{ opacity: 0, y: "-100%" }}
@@ -114,7 +116,7 @@ function AppBanner() {
                   "h-[30rem]",
                   index === 0 && "relative z-20 block",
                   index === 1 && "absolute origin-bottom-left hidden xl:block",
-                  index === 2 && "absolute origin-bottom-right hidden xl:block"
+                  index === 2 && "absolute origin-bottom-right hidden xl:block",
                 )}
               >
                 <IphoneFrame src={src} />
@@ -122,7 +124,7 @@ function AppBanner() {
             ))}
           </motion.div>
         </div>
-        <Spill className="-translate-y-1"/>
+        <Spill className="-translate-y-1" />
       </motion.div>
     </motion.section>
   );

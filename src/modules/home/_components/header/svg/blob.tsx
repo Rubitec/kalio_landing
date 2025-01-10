@@ -21,8 +21,8 @@ function SVGBlob({ className, scrollYProgress }: Props) {
     >
       <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-          <stop stopColor="oklch(var(--p))" offset="0%" />
-          <stop stopColor="oklch(var(--s))" offset="100%" />
+          <stop stopColor="#2ECC71" offset="0%" />
+          <stop stopColor="#2ECC71" offset="100%" />
         </linearGradient>
       </defs>
       <g strokeWidth="2" stroke="url(#a)" fill="none" strokeLinecap="round">

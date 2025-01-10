@@ -1,329 +1,307 @@
 import type { TemplateConfig } from "./configType";
 
 const templateConfig: TemplateConfig = {
-  name: "Lorem Ipsum",
+  name: "Kalio",
   seo: {
-    title: "Mobile App Landing Template",
-    description: "Mobile App Landing Template",
+    title: "Kalio - AI Calorie Tracker",
+    description: "Track your macros and calories effortlessly with Kalio.",
   },
-  // Draws grid behind main container
   backgroundGrid: false,
   logo: "/logo.svg",
   theme: "corporate",
-  // Forces theme to be chosen above, no matter what user prefers
   forceTheme: false,
-  // Shows switch to toggle between dark and light modes
   showThemeSwitch: true,
-  appStoreLink: "https://apps.apple.com/us/app/google/id284815942",
-  googlePlayLink:
-    "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
+  appStoreLink:
+    "https://apps.apple.com/us/app/kalio-ai-calorie-tracker/id6736513779",
+  googlePlayLink: undefined,
   footer: {
     legalLinks: {
       termsAndConditions: true,
       cookiesPolicy: true,
       privacyPolicy: true,
     },
-    socials: {
-      instagram: "https://instagram.com/google",
-      facebook: "https://facebook.com/google",
-      twitter: "https://x.com/google",
-    },
+    socials: {},
     links: [
       { href: "/#features", title: "Features" },
       { href: "/#how-it-works", title: "How it works" },
-      { href: "/#pricing", title: "Pricing" },
+      // { href: "/#pricing", title: "Pricing" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
   topNavbar: {
-    cta: "Get the app",
+    cta: "Download the app",
     disableWidthAnimation: false,
     hideAppStore: false,
-    hideGooglePlay: false,
+    hideGooglePlay: true,
     links: [
       { href: "/#features", title: "Features" },
       { href: "/#how-it-works", title: "How it works" },
-      { href: "/#pricing", title: "Pricing" },
+      // { href: "/#pricing", title: "Pricing" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
   appBanner: {
     id: "app-banner",
-    title: "Download Our Mobile App Today!",
+    title: "Download Kalio Today!",
     subtitle:
-      "Unlock the full potential of our services with seamless access at your fingertips. Stay connected, informed, and in control wherever you are.",
+      "Achieve your weight loss goals by tracking your macros and calories with the help of AI.",
     screenshots: [
-      "/screenshots/1.webp",
-      "/screenshots/2.webp",
-      "/screenshots/3.webp",
+      "/screenshots/1.png",
+      "/screenshots/2.png",
+      "/screenshots/3.png",
     ],
   },
   home: {
     seo: {
-      title: "Mobile App Landing Template",
-      description: "Mobile App Landing Template",
+      title: "Kalio - Your AI Calorie Tracker",
+      description: "Track your macros and calories effortlessly with Kalio.",
     },
     testimonials: {
       id: "testimonials",
-      title: "Testimonials",
-      subtitle: "Check out a few of our customer stories",
+      title: "What Our Users Say",
+      subtitle: "Hear from those who have transformed their lives with Kalio",
       cards: [
         {
           name: "Alice Johnson",
           comment:
-            "The service was fantastic! Highly recommended. The team was very professional and attentive to our needs. They went above and beyond to ensure we were satisfied with the results. I will definitely be using their services again in the future.",
+            "Kalio has changed my life! I can easily track my calories and macros, and the AI suggestions are incredibly helpful.",
         },
         {
           name: "Bob Smith",
           comment:
-            "Great value for the price. Very satisfied with the overall experience. The product quality is top-notch and the customer service is excellent. I appreciate the prompt responses to my inquiries and the helpful advice provided. Highly recommend.",
+            "I love how user-friendly Kalio is. It makes tracking my meals so much easier and more enjoyable.",
         },
         {
-          name: "Charlie Brown",
+          name: "Meroveo13",
           comment:
-            "An excellent experience from start to finish. The onboarding process was smooth and the support team was very responsive. I felt valued as a customer and the results exceeded my expectations. I am impressed with the level of detail and care put into their work.",
+            "The insights I get from Kalio have helped me stay on track with my weight loss journey. Highly recommend!",
         },
         {
-          name: "Dana White",
+          name: "FedRub",
           comment:
-            "Superb customer service and high-quality products. The team demonstrated great expertise and patience throughout the project. They addressed all my concerns and provided valuable insights. The end product was delivered on time and surpassed my expectations.",
+            "Kalio's AI features are a game changer! I never thought tracking calories could be this simple.",
         },
         {
-          name: "Eve Adams",
+          name: "Silkysmuv",
           comment:
-            "I couldn't be happier with the results! The attention to detail and the level of customization provided was outstanding. The team was friendly and professional, making the entire process enjoyable. I highly recommend their services to anyone looking for top-quality work.",
+            "I couldn't be happier with Kalio! It's the perfect tool for anyone serious about losing weight.",
         },
       ],
     },
-    partners: {
-      title: "As seen on",
-      logos: [
-        "/misc/companies/apple.svg",
-        "/misc/companies/aws.svg",
-        "/misc/companies/google.svg",
-        "/misc/companies/tumblr.svg",
-      ],
-    },
+    // partners: {
+    // title: "As featured in",
+    // logos: [
+    //   "/misc/companies/apple.svg",
+    //   "/misc/companies/aws.svg",
+    //   "/misc/companies/google.svg",
+    //   "/misc/companies/tumblr.svg",
+    // ],
+    // },
     howItWorks: {
       id: "how-it-works",
-      title: "How it works",
+      title: "How Kalio Works",
       subtitle:
-        "Explore our comprehensive step-by-step guide to understand how our process ensures seamless and effective results",
+        "Follow our simple steps to start tracking your macros and calories effectively.",
       steps: [
         {
           title: "Install the App",
           subtitle:
-            "Download and install the app on your device to get started quickly and easily.",
+            "Download and install Kalio on your device to get started on your weight loss journey.",
           image: "/stock/01.webp",
         },
         {
-          title: "Create an Account",
+          title: "Go through the onboarding",
           subtitle:
-            "Sign up by entering your personal details and verifying your email to create a new account in just a few minutes.",
+            "At the end of the onboarding, we'll give you an estimate of your daily macros and calories.",
           image: "/stock/02.webp",
         },
         {
-          title: "Set Up Your Profile",
+          title: "Track Your Meals",
           subtitle:
-            "Complete your profile by adding necessary information and preferences to personalize your experience on the platform.",
-          image: "/stock/03.webp",
+            "Log your meals and snacks easily to keep track of your calorie and macro intake.",
+          image: "/stock/03.jpg",
         },
         {
-          title: "Explore Features",
-          subtitle:
-            "Navigate through the app to discover various features and tools designed to enhance your productivity and engagement.",
-          image: "/stock/04.webp",
+          title: "Get Insights",
+          subtitle: "Get insights on your progress and see how you're doing.",
+          image: "/stock/04.jpg",
         },
         {
-          title: "Connect with Others",
+          title: "Achieve Your Goals",
           subtitle:
-            "Start connecting with friends, colleagues, and like-minded individuals to expand your network and collaborate efficiently.",
-          image: "/stock/05.webp",
+            "Use Kalio's insights and AI recommendations to stay on track and reach your weight loss goals.",
+          image: "/stock/05.jpg",
         },
       ],
     },
-    features: {
-      id: "features",
-      title: "Transform Your Daily Routine",
-      subtitle:
-        "Elevate your lifestyle with our innovative mobile app, designed for seamless living",
-      cards: [
-        {
-          title: "Seamless Integration",
-          subtitle:
-            "Connect effortlessly with all your devices, ensuring smooth and efficient workflows across different platforms and applications without any disruptions",
-          icon: "/3D/link-front-color.webp",
-        },
-        {
-          title: "24/7 Customer Support",
-          subtitle:
-            "Get assistance whenever you need it with our dedicated customer support team, available around the clock to help resolve any issues you may encounter",
-          icon: "/3D/clock-front-color.webp",
-        },
-        {
-          title: "Intuitive Design",
-          subtitle:
-            "Navigate through our intuitive and easy-to-use interface designed to enhance user experience, making it accessible for users of all skill levels",
-          icon: "/3D/roll-brush-front-color.webp",
-        },
-        {
-          title: "Top-Notch Security",
-          subtitle:
-            "Protect your data with our top-notch security protocols, offering robust encryption and real-time monitoring to keep your information safe and secure",
-          icon: "/3D/sheild-front-color.webp",
-        },
-      ],
-    },
+    // features: {
+    //   id: "features",
+    //   title: "Our Features",
+    //   subtitle:
+    //     "Discover the powerful features that make Kalio the ultimate calorie tracker.",
+    //   cards: [
+    //     {
+    //       title: "AI-Powered Tracking",
+    //       subtitle:
+    //         "Utilize advanced AI technology to track your macros and calories effortlessly.",
+    //       icon: "/3D/link-front-color.webp",
+    //     },
+    //     {
+    //       title: "Track Your Progress",
+    //       subtitle:
+    //         "Monitor your journey and achievements as you reach your weight loss goals.",
+    //       icon: "/3D/clock-front-color.webp",
+    //     },
+    //     {
+    //       title: "User-Friendly Interface",
+    //       subtitle:
+    //         "Experience the most intuitive interface where you can track a new meal with just two taps.",
+    //       icon: "/3D/roll-brush-front-color.webp",
+    //     },
+    //     {
+    //       title: "Data Security",
+    //       subtitle:
+    //         "Your data is safe with us. We implement top-notch security measures to protect your information.",
+    //       icon: "/3D/sheild-front-color.webp",
+    //     },
+    //   ],
+    // },
     faq: {
       id: "faq",
       title: "Frequently Asked Questions",
       qa: [
         {
-          question: "How can I create an account on your website?",
+          question: "How can I create an account on Kalio?",
           answer:
-            "To create an account, click on the 'Sign Up' button located at the top right corner of our homepage. Fill in the required information, including your name, email address, and password. Once you submit the form, you will receive a confirmation email. Click the link in the email to verify your account, and you're all set!",
+            "Currently, you can start using the app without creating an account. Simply download the app and begin tracking your progress right away.",
         },
         {
-          question: "What payment methods do you accept?",
+          question: "What features does Kalio offer?",
           answer:
-            "We accept a variety of payment methods to ensure convenience for our customers. These include major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay. For more details, visit our Payments page.",
+            "Kalio offers AI-powered tracking, meal logging, personalized insights, and email support to help you achieve your weight loss goals.",
         },
         {
-          question: "How can I track my order?",
+          question: "How can I track my progress?",
           answer:
-            "Once your order is shipped, you will receive an email with a tracking number. You can use this tracking number on our website under the 'Track Order' section to see the current status and estimated delivery date of your package.",
+            "You can track your progress through the app's dashboard, which provides insights into your calorie and macro intake.",
         },
         {
-          question: "What is your return policy?",
-          answer:
-            "We offer a 30-day return policy for unused and unopened items. If you are not satisfied with your purchase, please contact our customer support team to initiate a return. Refunds will be processed within 7-10 business days after we receive the returned item.",
+          question: "What is your privacy policy?",
+          answer: "We don't store any data; everything is safe on your device.",
         },
         {
           question: "How can I contact customer support?",
           answer:
-            "You can contact our customer support team through the 'Contact Us' page on our website. We are available via email, phone, and live chat. Our support hours are Monday to Friday, 9 AM to 5 PM.",
+            "You can reach our customer support team through the 'Contact Us' section in the app or via email.",
         },
       ],
     },
     header: {
-      headline: "Your Ultimate App for Every Need",
+      headline: "Your Ultimate Weight Loss Companion",
       subtitle:
-        "Streamline your tasks, boost your productivity, and accomplish more every day. Unlock a world of possibilities with our cutting-edge mobile application.",
+        "Track your calories and macros effortlessly with Kalio's AI technology.",
       screenshots: [
-        "/screenshots/1.webp",
-        "/screenshots/2.webp",
-        "/screenshots/3.webp",
+        "/screenshots/1.png",
+        "/screenshots/2.png",
+        "/screenshots/3.png",
       ],
-      rewards: ["App of the year \n 1st", "Product of the day"],
-      usersDescription: "100+ people already using the app",
+      rewards: ["Best Calorie Tracker"],
+      usersDescription: "Join +5k of users achieving their weight loss goals.",
       headlineMark: [1, 3],
     },
-    pricing: {
-      id: "pricing",
-      title: "Pricing",
-      subtitle: "Flexible costs to meet your budget",
-      actionText: "Download the app",
-      plans: [
-        {
-          title: "Basic Plan",
-          price: "$9.99/month",
-          rows: ["Access to basic features", "Email support", "1 GB storage"],
-        },
-        {
-          title: "Standard Plan",
-          price: "$19.99/month",
-          featured: true,
-          rows: [
-            "Access to all basic features",
-            "Priority email support",
-            "10 GB storage",
-            "Monthly webinars",
-          ],
-        },
-        {
-          title: "Premium Plan",
-          price: "$29.99/month",
-          rows: [
-            "Access to all features",
-            "24/7 support",
-            "100 GB storage",
-            "Weekly webinars",
-            "Exclusive content",
-          ],
-        },
-      ],
-    },
+    // pricing: {
+    //   id: "pricing",
+    //   title: "Pricing Plans",
+    //   subtitle: "Choose a plan that fits your needs",
+    //   actionText: "Download the app",
+    //   plans: [
+    //     {
+    //       title: "Basic Plan",
+    //       price: "$9.99/month",
+    //       rows: [
+    //         "Access to basic features",
+    //         "Email support",
+    //         "Calorie tracking",
+    //       ],
+    //     },
+    //     {
+    //       title: "Standard Plan",
+    //       price: "$19.99/month",
+    //       featured: true,
+    //       rows: [
+    //         "Access to all features",
+    //         "Priority email support",
+    //         "Macro tracking",
+    //         "Weekly insights",
+    //       ],
+    //     },
+    //     {
+    //       title: "Premium Plan",
+    //       price: "$29.99/month",
+    //       rows: [
+    //         "Access to all features",
+    //         "24/7 support",
+    //         "Personalized meal plans",
+    //         "Exclusive content",
+    //       ],
+    //     },
+    //   ],
+    // },
   },
   privacyPolicy: {
     seo: {
-      title: "Privacy Policy - Mobile App Landing Template",
-      description: "Privacy Policy",
+      title: "Privacy Policy - Kalio",
+      description: "Privacy Policy for Kalio",
     },
     content: `# Privacy Policy
 
-**Effective Date:** [Insert Date]
+**Last updated:** November 13, 2024
 
-## Introduction
+This Privacy Policy describes our policies and procedures on the collection, use, and disclosure of your information when you use the Service and tells you about your privacy rights and how the law protects you.
 
-Welcome to [Your App Name] (the "App"). [Your Company Name] ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our App.
+We use your personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of a Privacy Policy Generator.
 
-## Information We Collect
+## Interpretation and Definitions
 
-### 1. Information You Provide
-- **Account Information:** When you sign up for our App, we may collect your name, email address, and other contact information.
-- **User Content:** We may collect any content you upload, post, or otherwise transmit through the App, including messages, photos, and other media.
+### Interpretation
+The words with initial letters capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or plural.
 
-### 2. Information We Collect Automatically
-- **Usage Data:** We collect information about your interactions with the App, such as the features you use and the time spent on the App.
-- **Device Information:** We collect information about the device you use to access the App, including IP address, device type, and operating system.
+### Definitions
+For the purposes of this Privacy Policy:
+- **Account** means a unique account created for you to access our Service or parts of our Service.
+- **Affiliate** means an entity that controls, is controlled by, or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest, or other securities entitled to vote for election of directors or other managing authority.
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Rubitec Consulting Soluciones Empresariales SL, C Turo Blau, 12, Barcelona, Spain.
+- **Cookies** are small files placed on your computer, mobile device, or any other device by a website, containing details of your browsing history on that website among its many uses.
+- **Country** refers to: Spain.
+- **Device** means any device that can access the Service such as a computer, a cellphone, or a digital tablet.
+- **Personal Data** is any information that relates to an identified or identifiable individual.
+- **Service** refers to the Website.
+- **Service Provider** means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service, or to assist the Company in analyzing how the Service is used.
+- **Usage Data** refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).
+- **Website** refers to Kalio, accessible from https://rubitec.co
+- **You** means the individual accessing or using the Service, or the company or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
-### 3. Information from Third Parties
-- **Third-Party Services:** If you connect to the App through a third-party service (e.g., social media), we may collect information from that service as permitted by their privacy policies.
+## Collecting and Using Your Personal Data
 
-## How We Use Your Information
+### Types of Data Collected
 
-We may use the information we collect for the following purposes:
-- **To Provide and Maintain Our Service:** We use your information to operate and improve the App.
-- **To Communicate with You:** We may use your contact information to send you updates, notifications, and other communications related to the App.
-- **To Personalize Your Experience:** We may use your information to personalize your experience with the App and to offer you content tailored to your interests.
-- **For Analytics and Research:** We use the information to analyze how our users interact with the App and to improve our services.
+#### Personal Data
+While using Our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to:
+- Email address
+- First name and last name
+- Phone number
+- Usage Data
 
-## Sharing Your Information
+#### Usage Data
+Usage Data is collected automatically when using the Service. Usage Data may include information such as your Device's Internet Protocol address (e.g., IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, time spent on those pages, unique device identifiers, and other diagnostic data.
 
-We do not share your personal information with third parties except in the following circumstances:
-- **With Your Consent:** We may share your information with third parties if you give us explicit consent to do so.
-- **Service Providers:** We may share your information with third-party service providers who perform services on our behalf.
-- **Legal Requirements:** We may disclose your information if required by law, or if we believe that such action is necessary to comply with legal obligations, protect our rights, or prevent fraud.
-
-## Your Rights and Choices
-
-- **Access and Correction:** You have the right to access and correct the personal information we hold about you.
-- **Data Deletion:** You may request that we delete your personal information by contacting us at [Your Contact Information].
-- **Opt-Out:** You may opt out of receiving promotional communications from us by following the instructions in those communications.
-
-## Security
-
-We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no security system is completely secure, and we cannot guarantee the absolute security of your information.
-
-## Changes to This Privacy Policy
-
-We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" above. Your continued use of the App after such changes signifies your acceptance of the revised Privacy Policy.
-
-## Contact Us
-
-If you have any questions or concerns about this Privacy Policy, please contact us at:
-
-[Your Company Name]  
-[Your Contact Information]  
-[Email Address]  
-[Phone Number (optional)]
-
+We may also collect information that your browser sends whenever
 `,
   },
   cookiesPolicy: {
     seo: {
-      title: "Cookies Policy - Mobile App Landing Template",
-      description: "Cookies Policy",
+      title: "Cookies Policy - Kalio",
+      description: "Cookies Policy for Kalio",
     },
     content: `# Cookies Policy
 
@@ -331,7 +309,7 @@ If you have any questions or concerns about this Privacy Policy, please contact 
 
 ## Introduction
 
-This Cookies Policy explains how [Your Company Name] ("we," "our," or "us") uses cookies and similar technologies to recognize you when you visit our app, [Your App Name] (the "App"). It explains what these technologies are and why we use them, as well as your rights to control their use.
+This Cookies Policy explains how Rubitec ("we," "our," or "us") uses cookies and similar technologies to recognize you when you visit our app, Kalio (the "App"). It explains what these technologies are and why we use them, as well as your rights to control their use.
 
 ## What Are Cookies?
 
@@ -386,87 +364,97 @@ We may update this Cookies Policy from time to time. We will notify you of any c
 
 If you have any questions or concerns about our use of cookies, please contact us at:
 
-[Your Company Name]  
-[Your Contact Information]  
-[Email Address]  
-[Phone Number (optional)]
+Rubitec  
+info@rubitecconsulting.com
+rubitec.co
 `,
   },
   termsAndConditions: {
     seo: {
-      title: "Terms and conditions - Mobile App Landing Template",
-      description: "Terms and conditions",
+      title: "Terms and Conditions - Kalio",
+      description: "Terms and Conditions for Kalio",
     },
-    content: `# Terms and Conditions
+    content: `Effective Date: Oct 6th 2024. Please read these terms and conditions carefully before using our Service. 
 
-**Effective Date:** [Insert Date]
+### Interpretation and Definitions
 
-## Introduction
+**Interpretation**  
+The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
 
-Welcome to [Your App Name] (the "App"). These Terms and Conditions ("Terms") govern your use of the App provided by [Your Company Name] ("we," "our," or "us"). By accessing or using our App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App.
+**Definitions**  
+For the purposes of these Terms and Conditions:  
+- **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.  
+- **Country** refers to: Barcelona, Spain.  
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Rubitec Consulting Soluciones Empresariales SL, C Turo Blau, 12, Barcelona, Spain.  
+- **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.  
+- **Service** refers to the Website.  
+- **Terms and Conditions** (also referred to as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the Terms and Conditions Generator.  
+- **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.  
+- **Website** refers to Kalio, accessible from the Apple AppStore.  
+- **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.  
 
-## Use of the App
+### Acknowledgment
 
-### 1. Eligibility
-To use our App, you must be at least [Insert Age] years old and capable of entering into a legally binding agreement. By using the App, you represent and warrant that you meet these eligibility requirements.
+These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
 
-### 2. User Accounts
-- **Registration:** You may be required to create an account to access certain features of the App. You must provide accurate and complete information when creating your account.
-- **Account Security:** You are responsible for maintaining the confidentiality of your account login details and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
-- **Account Termination:** We reserve the right to terminate or suspend your account at any time, without notice, for any reason, including if we believe you have violated these Terms.
+Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
 
-### 3. Prohibited Conduct
-You agree not to:
-- Use the App for any illegal or unauthorized purpose.
-- Interfere with or disrupt the operation of the App or the servers or networks used to make the App available.
-- Upload or transmit any viruses, malware, or other harmful code.
-- Attempt to gain unauthorized access to any part of the App or to other accounts, systems, or networks connected to the App.
+By accessing or using the Service, You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions, then You may not access the Service. You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
 
-## Intellectual Property
+Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
 
-### 1. Ownership
-All content and materials available on the App, including but not limited to text, graphics, logos, and software, are the property of [Your Company Name] or its licensors and are protected by intellectual property laws.
+### Links to Other Websites
 
-### 2. License
-We grant you a limited, non-exclusive, non-transferable license to access and use the App for your personal, non-commercial use. This license is subject to your compliance with these Terms.
+Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company. The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services. We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
 
-### 3. Restrictions
-You may not:
-- Reproduce, distribute, modify, or create derivative works of any content or materials on the App without our prior written consent.
-- Use any data mining, robots, or similar data gathering or extraction methods on the App.
+### Termination
 
-## Disclaimers and Limitation of Liability
+We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions. Upon termination, Your right to use the Service will cease immediately.
 
-### 1. Disclaimers
-The App is provided on an "as is" and "as available" basis. We make no warranties or representations about the accuracy or completeness of the content available on or through the App. We disclaim all warranties, whether express or implied, including any warranties of merchantability, fitness for a particular purpose, and non-infringement.
+### Limitation of Liability
 
-### 2. Limitation of Liability
-To the fullest extent permitted by law, [Your Company Name] shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from:
-- Your use or inability to use the App;
-- Any unauthorized access to or use of our servers and/or any personal information stored therein;
-- Any bugs, viruses, or other harmful code that may be transmitted to or through the App;
-- Any errors or omissions in any content or for any loss or damage incurred as a result of your use of any content posted, emailed, transmitted, or otherwise made available through the App.
+Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service. To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose. Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
 
-## Indemnification
+### "AS IS" and "AS AVAILABLE" Disclaimer
 
-You agree to indemnify, defend, and hold harmless [Your Company Name], its affiliates, and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including without limitation reasonable legal and accounting fees, arising out of or in any way connected with your access to or use of the App or your violation of these Terms.
+The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected. Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components. Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
 
-## Governing Law
+### Governing Law
 
-These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law principles. You agree to submit to the exclusive jurisdiction of the courts located in [Your Jurisdiction] to resolve any legal matter arising from these Terms.
+The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
 
-## Changes to These Terms
+### Disputes Resolution
 
-We may update these Terms from time to time. We will notify you of any changes by posting the new Terms on this page and updating the "Effective Date" above. Your continued use of the App after such changes signifies your acceptance of the revised Terms.
+If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
 
-## Contact Us
+### For European Union (EU) Users
 
-If you have any questions or concerns about these Terms, please contact us at:
+If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which You are resident.
 
-[Your Company Name]  
-[Your Contact Information]  
-[Email Address]  
-[Phone Number (optional)]
+### United States Legal Compliance
+
+You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
+
+### Severability and Waiver
+
+**Severability**  
+If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+
+**Waiver**  
+Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not affect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
+
+### Translation Interpretation
+
+These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
+
+### Changes to These Terms and Conditions
+
+We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion. By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+
+### Contact Us
+
+If you have any questions about these Terms and Conditions, You can contact us:  
+By email: info@rubitecconsulting.com
 `,
   },
 };
