@@ -4,6 +4,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://rubitec.github.io",
+  base: "/kalio_landing/",
   vite: {
     css: {
       preprocessorOptions: {
