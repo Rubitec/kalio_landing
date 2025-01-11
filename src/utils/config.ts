@@ -9,7 +9,7 @@ const templateConfig: TemplateConfig = {
   backgroundGrid: false,
   logo: "/logo.svg",
   theme: "light",
-  forceTheme: false,
+  forceTheme: true,
   showThemeSwitch: false,
   appStoreLink:
     "https://apps.apple.com/us/app/kalio-ai-calorie-tracker/id6736513779",
@@ -17,7 +17,7 @@ const templateConfig: TemplateConfig = {
   footer: {
     legalLinks: {
       termsAndConditions: true,
-      cookiesPolicy: true,
+      cookiesPolicy: false,
       privacyPolicy: true,
     },
     socials: {},

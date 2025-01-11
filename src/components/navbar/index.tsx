@@ -4,13 +4,13 @@ import clsx from "clsx";
 import { easeIn, motion, useScroll, useTransform } from "framer-motion";
 import { useContext, useState } from "react";
 import { ConfigContext } from "../../utils/configContext";
-// import ThemeSwitcher from "./themeSwitcher";
+import ThemeSwitcher from "./themeSwitcher";
 
 function Navbar() {
   const {
     name,
     logo,
-    // showThemeSwitch,
+    showThemeSwitch,
     topNavbar,
     googlePlayLink,
     appStoreLink,
@@ -62,7 +62,7 @@ function Navbar() {
           </a>
         </div>
         <div className="navbar-end md:hidden">
-          {/* {showThemeSwitch && <ThemeSwitcher />} */}
+          {showThemeSwitch && <ThemeSwitcher />}
           <MenuToggle
             toggle={() => setIsMobileNavVisible((current) => !current)}
             isOpen={isMobileNavVisible}
