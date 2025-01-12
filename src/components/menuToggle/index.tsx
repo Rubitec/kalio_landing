@@ -9,7 +9,6 @@ const Path = (props: SVGMotionProps<SVGElement>) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    stroke="#2ECC71"
     strokeLinecap="round"
     {...props}
   />
@@ -26,12 +25,14 @@ const MenuToggle = ({ toggle, isOpen }: Props) => (
       viewBox="0 0 23 23"
     >
       <Path
+        stroke={!isOpen ? "white" : "#2ECC71"}
         variants={{
           closed: { d: "M 2 2.5 L 20 2.5" },
           open: { d: "M 3 16.5 L 17 2.5" },
         }}
       />
       <Path
+        stroke={!isOpen ? "white" : "#2ECC71"}
         d="M 2 9.423 L 20 9.423"
         variants={{
           closed: { opacity: 1 },
@@ -40,6 +41,7 @@ const MenuToggle = ({ toggle, isOpen }: Props) => (
         transition={{ duration: 0.2 }}
       />
       <Path
+        stroke={!isOpen ? "white" : "#2ECC71"}
         variants={{
           closed: { d: "M 2 16.346 L 20 16.346" },
           open: { d: "M 3 2.5 L 17 16.346" },

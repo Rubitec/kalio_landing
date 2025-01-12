@@ -30,8 +30,14 @@ function Navbar() {
 
   return (
     <motion.nav
-      className="opacity-0 max-w-screen-lg mx-auto sticky top-0 z-50"
+      className={clsx(
+        "opacity-0 sticky top-0 z-50",
+        isMobileNavVisible
+          ? "w-screen h-screen"
+          : "max-w-screen-lg mx-auto max-md:mx-4",
+      )}
       animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <motion.div
         style={{
@@ -58,11 +64,21 @@ function Navbar() {
         <div className="navbar-start">
           <a href="/" className="flex items-center">
             <img className="h-16" src={logo} alt="logo" />
-            <span className="font-bold mx-1 md:text-lg">{name}</span>
+            <span
+              className="font-bold mx-1 md:text-lg"
+              style={{
+                color:
+                  isMobileNavVisible || opacity.get() > 0.5
+                    ? "#FFFFFF"
+                    : "#000000",
+              }}
+            >
+              {name}
+            </span>
           </a>
         </div>
         <div className="navbar-end md:hidden">
-          {showThemeSwitch && <ThemeSwitcher />}
+          {/* {showThemeSwitch && <ThemeSwitcher />} */}
           <MenuToggle
             toggle={() => setIsMobileNavVisible((current) => !current)}
             isOpen={isMobileNavVisible}
@@ -76,6 +92,9 @@ function Navbar() {
                 <a
                   className="text-sm whitespace-nowrap link link-hover"
                   href={href}
+                  style={{
+                    color: opacity.get() > 0.5 ? "#FFFFFF" : "#000000",
+                  }}
                 >
                   {title}
                 </a>

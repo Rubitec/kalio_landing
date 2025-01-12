@@ -7,7 +7,7 @@ const templateConfig: TemplateConfig = {
     description: "Track your macros and calories effortlessly with Kalio.",
   },
   backgroundGrid: false,
-  logo: "/logo.svg",
+  logo: "/logo.png",
   theme: "light",
   forceTheme: true,
   showThemeSwitch: false,
