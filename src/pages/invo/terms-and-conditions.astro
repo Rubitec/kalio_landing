@@ -1,0 +1,12 @@
+---
+import TermsAndConditionsPage from "@modules/termsAndConditions";
+import Layout from "Layout.astro";
+import invoConfig from "utils/invo-config";
+---
+
+<Layout
+  {...invoConfig}
+  seo={invoConfig.termsAndConditions?.seo}
+>
+  <TermsAndConditionsPage client:load config={invoConfig} />
+</Layout>

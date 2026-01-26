@@ -1,0 +1,12 @@
+---
+import PrivacyPolicyPage from "@modules/privacyPolicy";
+import Layout from "Layout.astro";
+import invoConfig from "utils/invo-config";
+---
+
+<Layout
+  {...invoConfig}
+  seo={invoConfig.privacyPolicy?.seo}
+>
+  <PrivacyPolicyPage client:load config={invoConfig} />
+</Layout>
